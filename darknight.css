@@ -15,7 +15,7 @@
 
 body {
     /* font, change to '' for default discord font */
-    --font: 'Figtree';
+    --font: 'figtree';
 
     /* sizes */
     --gap: 12px; /* spacing between panels */

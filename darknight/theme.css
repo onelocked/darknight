@@ -20,7 +20,7 @@ body {
 
 .visual-refresh {
     /* panel separation */
-    .guilds_c48ade /* server list */, 
+    .guilds_c48ade /* server list */,
     .sidebarList_c48ade /* channel list (includes dm list) */,
     .panels_c48ade /* user panel */,
     .chat_f75fb0 > .subtitleContainer_f75fb0 /* chat titlebar */,
@@ -89,6 +89,9 @@ body {
     .container__2637a /* channel list inner */,
     .header_f37cb1 /* server name */ {
         background: none;
+    }
+    .overlay_c0bea0 {
+      background: var(--text-0)
     }
 
     /* fix discord's idiotic server banners */
@@ -379,7 +382,7 @@ body {
         border-radius: var(--radius-md);
     }
 
-    .outer_c0bea0 /* profile outer */, 
+    .outer_c0bea0 /* profile outer */,
     .contentWrapper__08434  /* gif panel */ {
         border-radius: var(--radius-lg);
     }
