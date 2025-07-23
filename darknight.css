@@ -16,6 +16,8 @@
 body {
     /* font, change to '' for default discord font */
     --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
@@ -56,7 +58,7 @@ body {
     --transparency-tweaks: on; /* turn on to remove some elements for better transparency */
     --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
     --panel-blur: off; /* turn on to blur the background of panels */
-    --blur-amount: 0px; /* amount of blur */
+    --blur-amount: 5px; /* amount of blur */
     --bg-floating: var(--bg-3); /* you can set this to a more opaque color if floating panels look too transparent */
 
     /* chatbar options */
@@ -65,7 +67,7 @@ body {
     --chatbar-padding: 8px; /* padding of the chatbar */
 
     /* other options */
-    --small-user-panel: off; /* turn on to make the user panel smaller like in old discord */
+    --small-user-panel: on; /* turn on to make the user panel smaller like in old discord */
 }
 
 /* color options */
