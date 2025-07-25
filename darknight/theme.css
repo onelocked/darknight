@@ -63,10 +63,10 @@ body {
     }
 
     .panels_c48ade /* user panel */ {
-        width: 100%;
+        width: 125%;
         position: static;
         grid-area: userPanel;
-        margin: var(--gap) 0 0 0;
+        margin: 0 0 0 -12px !important;
         overflow: hidden;
         max-width: calc(var(--custom-guild-sidebar-width) + var(--gap) + 4px);
     }
