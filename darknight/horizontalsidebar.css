@@ -1,99 +1,64 @@
-.base_c48ade[data-fullscreen="false"] .content_c48ade {
-  margin-top: var(--custom-guild-list-width);
-
-  overflow: visible;
+:root {
+  --notices-height: 36px;
+  --serverlist-offset: var(--custom-guild-list-width);
 }
 
-#app-mount .sidebar_c48ade {
+.base__5e434[data-fullscreen=false] .content__5e434 {
+  margin-top: var(--serverlist-offset);
+  overflow: visible !important;
+}
 
+:fullscreen .content__5e434 {
+  margin: 0 !important;
+}
+
+#app-mount .sidebar__5e434 {
   border-radius: 0;
-  overflow: visible;
-
+  overflow: visible !important;
 }
-#app-mount .guilds_c48ade {
+#app-mount .guilds__5e434 {
   transform-origin: top left;
-
   rotate: -90deg;
-  height: 98.95vw !important;
+  height: 100vw !important;
   bottom: unset;
   position: absolute !important;
-
   left: 0;
 }
 #app-mount .tree_ef3116 {
   padding-top: var(--HSL-top-padding, var(--size-sm));
-
-
 }
 #app-mount .wrapper_cc5dd2 {
   rotate: 90deg;
-
-
-
 }
 #app-mount .itemsContainer_ef3116,
 #app-mount .stack_dbd263 {
   flex-direction: var(--HSL-server-direction);
   justify-content: var(--HSL-server-alignment);
-
-
+}
+#app-mount .notice__6e2b9 {
+  height: var(--notices-height);
+}
+#app-mount .notice__6e2b9 + .content__5e434 {
+  --serverlist-offset: calc(var(--notices-height) + var(--custom-guild-list-width));
 }
 
-.container_c48ade > div[style]:not(.base_c48ade) {
-  width: 98.6vw !important;
-
-  height: var(--custom-guild-list-width) !important;
+.container__5e434 > div[style]:not(.base__5e434) {
+  width: 100vw !important;
+  height: var(--serverlist-offset) !important;
   position: absolute;
-  top: calc(var(--custom-guild-list-width) + var(--custom-app-top-bar-height));
+  top: calc(var(--serverlist-offset) + var(--custom-app-top-bar-height));
   pointer-events: none;
   z-index: 1;
-
-
 }
-.container_c48ade > div[style]:not(.base_c48ade) .guilds_c48ade {
+.container__5e434 > div[style]:not(.base__5e434) .guilds__5e434 {
   pointer-events: all;
-
-
+}
+.container__5e434 > div[style]:not(.base__5e434) + .base__5e434 .content__5e434 {
+  margin-top: calc(var(--serverlist-offset) * 2);
 
 }
-.container_c48ade > div[style]:not(.base_c48ade) + .base_c48ade .content_c48ade {
-  margin-top: calc(var(--custom-guild-list-width) * 2);
-
-
-
-}
-
-
 
 :root {
   --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
   --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
-}
-
-
-.base_c48ade /* base grid */ {
-  gap: 12px !important
-}
-
-
-
-.sidebarList_c48ade /* server list + channel list + user panel group */ {
-  margin: 0 0 0 -12px !important;
-}
-
-
-.panels_c48ade /* user panel */ {
-
-  margin: 0 0 0 0 !important;
-  position: absolute;
-}
-
-
-#vc-spotify-titles {
-    display: grid !important;
-    flex-direction: column;
-    padding: 0.2rem;
-    align-items: unset !important;
-    place-content: flex-start center;
-    overflow: hidden;
 }
