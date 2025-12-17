@@ -11,7 +11,7 @@
 
 
 @import url('https://raw.githubusercontent.com/onelocked/darknight/refs/heads/main/darknight/theme.css');
-@import url('https://raw.githubusercontent.com/onelocked/darknight/refs/heads/main/darknight/horizontalsidebar.css');
+@import url('https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css');
 
 body {
     /* font, change to '' for default discord font */
